@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4742815083414683833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4742815083414683815}
+  - component: {fileID: 4742815083414683814}
+  m_Layer: 0
+  m_Name: Falaplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4742815083414683815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742815083414683833}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.84, y: 3.4755583, z: -0.26003122}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4742815083414683814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742815083414683833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0448169a27b21478607a28be2c4bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sons:
+  - name: Portugal
+    clip: {fileID: 8300000, guid: 435f04b1c2031e04ba905d902432a812, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  - name: England
+    clip: {fileID: 8300000, guid: 9f6a51dcfa7dfb1408988c84a2500f51, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  - name: Italy
+    clip: {fileID: 8300000, guid: b97af343a033fa046b399944fc3d12ec, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  - name: Russian
+    clip: {fileID: 8300000, guid: 5b1e2e80c16bc664c85afbcfd33fad56, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  - name: Single
+    clip: {fileID: 8300000, guid: 0781a19de3c09b84a9ff7d7908719ad1, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  - name: Return
+    clip: {fileID: 8300000, guid: dd0498c42ce52f24c8419b4035515577, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  - name: Platform
+    clip: {fileID: 8300000, guid: b645d6267cb8bd447bb6c3bcbc8afcc4, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  - name: Time
+    clip: {fileID: 8300000, guid: 7c9e3619ddb07374a88925934663ec34, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  - name: Thank you
+    clip: {fileID: 8300000, guid: 43c8d026f5c5eda44b35d026c5f34374, type: 3}
+    volume: 0.78
+    pitch: 1
+    source: {fileID: 0}
+  d: {fileID: 0}
+  text: {fileID: 0}
