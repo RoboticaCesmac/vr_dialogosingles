@@ -5,11 +5,12 @@ using TMPro;
 public class funcao : MonoBehaviour
 {
 public TextMeshProUGUI texto_tela;
-public string[] seq; // sequencias das frases
+public string[] seq;// sequencias das frases
+    private string frase_errado = "I don't understand what you are saying.";
 public int index; // inicio do vetor
 public float tipo_Veloc;
 public GameObject[] botao;
-    public GameObject d;
+    public GameObject d, timeline_errado;
     AudioSource s = fala.som;
   
     public GameObject Text;
@@ -46,6 +47,15 @@ IEnumerator type(){
         texto_tela.text += letra;
         yield return new WaitForSeconds(tipo_Veloc);
     }
+    }
+
+    IEnumerator type_errado()
+    {
+        foreach (char letra in frase_errado.ToCharArray())
+        {
+            texto_tela.text += letra;
+            yield return new WaitForSeconds(tipo_Veloc);
+        }
     }
     public void vazio() 
     {
@@ -122,8 +132,7 @@ public void q5(){
         {
             botao[i].SetActive(false);
         }
-        Text.SetActive(false);
-        
+       
     }
     public void Terminar()
    {
@@ -131,6 +140,26 @@ public void q5(){
         texto_tela.text = "";
         StartCoroutine(type());
         d.SendMessage("playm", index);
+
+
+    }
+    public void texto_entendo()
+    {   
+        texto_tela.text = "";
+        StartCoroutine(type_errado());
+        d.SendMessage("destiva_timeline");
+
+
+
+    }
+
+    public void novamente_pergunat()
+    {
+        texto_tela.text = "";
+        StartCoroutine(type());
+        d.SendMessage("playm", index);
+        timeline_errado.SetActive(false);
+        
 
 
     }

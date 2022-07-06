@@ -22,4 +22,16 @@ public class audiomanager : MonoBehaviour
         
         
     }
+    public void destiva_timeline()
+    {
+        for (int i = 0; i < atendentefalar.Length; i++)
+        {
+
+
+            atendentefalar[i].SetActive(false);
+
+
+
+        }
+    }
 }

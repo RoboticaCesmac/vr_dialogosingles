@@ -6,7 +6,8 @@ using System;
 public class AudiomanPlayer : MonoBehaviour
 {
     public Som[] sons;
-    public GameObject d, anima, cena, timeline;
+
+    public GameObject d, anima, cena, timeline, timeline_errado;
     public GameObject text;
     public String fim;
     // Start is called before the first frame update
@@ -21,21 +22,17 @@ public class AudiomanPlayer : MonoBehaviour
 
         }
     }
-
+    
     // Update is called once per frame
-    public void Playsom(string name)
+    public void Playsomcerto(string name)
     {
         Som s = Array.Find(sons, Som => Som.name == name);
         s.source.Play();
 
   
 
-        if (name == "another time")
-        {
-            Invoke("reiniciar", s.source.clip.length);
-            
-        }
-        else if(name == "Thank you")
+        
+       if(name == "Thank you")
         {
             Invoke("timelinea", s.source.clip.length);
         }
@@ -43,19 +40,36 @@ public class AudiomanPlayer : MonoBehaviour
         {
             Invoke("Fim", s.source.clip.length);
         }
-        else if(name== "something")
-        {
-            Invoke("something", s.source.clip.length);
-        }
-       else if(name == "orange juice" || name == "Heineken" || name == "Coke" || name == "glass of water")
-        {
-
-            Invoke("opc", s.source.clip.length);
-        }
-        else
+        else 
         {
             Invoke("Ft", s.source.clip.length);
         }
+        
+
+    }
+    public void Playsomerrado(string name)
+    {
+        Som s = Array.Find(sons, Som => Som.name == name);
+        s.source.Play();
+
+
+
+
+        if (name == "Thank you")
+        {
+            Invoke("timelinea", s.source.clip.length);
+        }
+        else if (name == "Good bye" || name == "TKY")
+        {
+            Invoke("Fim", s.source.clip.length);
+        }
+        else
+        
+        {
+            Invoke("timeline_errad", s.source.clip.length);
+        }
+
+
     }
     void reiniciar()
     {
@@ -74,14 +88,14 @@ public class AudiomanPlayer : MonoBehaviour
         text.SetActive(true);
         d.SendMessage("ProximaFrase");
     }
-   void something() {
-        text.SetActive(true);
-        d.SendMessage("q2");
-        anima.SetActive(true);
-
-    }
+  
     void timelinea()
     {
         timeline.SetActive(true);
+    }
+   
+    void timeline_errad()
+    {
+        timeline_errado.SetActive(true);
     }
 }

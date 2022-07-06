@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class vrgaze : MonoBehaviour
 {
     public Image imagevr;
-    public float totaltime = 5;
+    public float totaltime = 3;
     public UnityEvent GVRClick;
     Animator anima;
     bool gvrstatus;

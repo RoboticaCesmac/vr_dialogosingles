@@ -67,8 +67,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 3419149543579980087}
-    m_Duration: 3.316666666666667
+    m_Asset: {fileID: 3110819448094769393}
+    m_Duration: 4.858775510204081
     m_TimeScale: 1
     m_ParentTrack: {fileID: -3054711615717263912}
     m_EaseInDuration: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: That's fine, and would you prefer an aisle seat or a window
+    m_DisplayName: i see you've chosen a window
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -179,12 +179,13 @@ MonoBehaviour:
   - {fileID: -7421439226792799735}
   - {fileID: 4025450060271102308}
   - {fileID: -3054711615717263912}
+  - {fileID: 7731397830436205567}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
   m_DurationMode: 0
   m_MarkerTrack: {fileID: -1742152161810254144}
---- !u!114 &3419149543579980087
+--- !u!114 &3110819448094769393
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: b2ac105cc754c9d4590d28cdf0b3771d, type: 3}
+  m_Clip: {fileID: 8300000, guid: a52182bdfd3509b4a814c21b3f2dd07e, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -345,10 +346,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 3.316666666666667
+  m_Time: 4.316666666666666
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: a2963275aaacd9b45898d53562279416, type: 2}
+--- !u!114 &7731397830436205567
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
+  m_Name: Audio Track (1)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
+  m_TrackProperties:
+    volume: 1
+    stereoPan: 0
+    spatialBlend: 0
 --- !u!114 &8206110957313642048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -361,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 0.3333333333333333
+  m_Time: 0
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 53e2aaa22b994b744a58cd702a489c98, type: 2}

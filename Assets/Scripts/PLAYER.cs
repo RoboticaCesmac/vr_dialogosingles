@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PLAYER : MonoBehaviour
 {
-    public GameObject triggernpc, text, canvas, falanpc, ui , eye, textptbrNpc;
+    public GameObject triggernpc, text, canvas, falanpc, ui, eye;
     private bool interig, verifica =  false , contexto = true;
    private bool clica = false;
 
@@ -30,7 +30,6 @@ public class PLAYER : MonoBehaviour
                 canvas.SetActive(verifica);
                 falanpc.SetActive(verifica);
                 ui.SetActive(true);
-                textptbrNpc.SetActive(verifica);
                 eye.SetActive(true);
                
                 interig = false;

@@ -71,8 +71,7 @@ public class multicolor : MonoBehaviour
     {
 
 
-        if (index < seq.Length - 1)
-        {
+      
              
             index = num;
 
@@ -84,6 +83,6 @@ public class multicolor : MonoBehaviour
 
 
 
-        }
+        
     }
 }
