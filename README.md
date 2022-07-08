@@ -6,8 +6,8 @@ Projeto criado com o motor de jogo [Unity](https://unity.com/pt) na versão 2019
 
 ## Links úteis
 
-- [Vídeo demonstrativo do simulador](https://youtu.be/vDpYxC-fFO4) <br/>
-- [Executável do projeto](https://drive.google.com/file/d/1t569pn_aMBEB3QGlzNvATgo2w8QYSMtq/view?usp=sharing) <br/>
+- [Vídeo demonstrativo do simulador](https://youtu.be/gxohIDtY6bg) <br/>
+- [Executável do projeto](https://drive.google.com/file/d/155plyvqmlt90FTkfcMQttwVEsgkTBkNR/view?usp=sharing) <br/>
 - [How to make a VR game - OCULUS INTEGRATION](https://www.youtube.com/watch?v=sKQOlqNe_WY&list=PLrk7hDwk64-Y7ELKfkw8ox8TaT9y3gNpS) <br/>
 - [Como configurar o projeto para buildar para o Oculus Quest](https://youtu.be/qiJpjnzW-mw) <br/>
 
